@@ -1,0 +1,3 @@
+import Link from "next/link";
+const items=["🌈","🎨","🦋","🏖️","🎂","⭐","🎩","📚"];
+export default function Page(){return <main><nav><Link className="logo" href="/"><span>N</span>Nitara&apos;s World</Link><Link href="/">← Home</Link></nav><section className="section"><div className="eyebrow">MY LIFE IN PICTURES</div><h2>Photo Gallery 📸</h2><p>A collection of my favourite memories.</p><div className="photos">{items.map((x,i)=><div key={i}>{x}<b>Add a photo here</b></div>)}</div></section></main>}
