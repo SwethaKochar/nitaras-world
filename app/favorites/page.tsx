@@ -1,0 +1,3 @@
+import Link from "next/link";
+const items=["📚 Books I Love","🎬 Movies I Enjoy","🐾 Animals I Like","🍕 Favourite Foods","🎮 Games I Play","✨ Things That Make Me Happy"];
+export default function Page(){return <main><nav><Link className="logo" href="/"><span>N</span>Nitara&apos;s World</Link><Link href="/">← Home</Link></nav><section className="section"><div className="eyebrow">THE THINGS I LOVE</div><h2>My Favorites ❤️</h2><p>Some of the things that make me smile.</p><div className="cards">{items.map((x,i)=><div className={["card peach","card pink","card yellow","card blue"][i%4]} key={x}><div className="emoji">{x.slice(0,2)}</div><h3>{x}</h3><p>Add Nitara&apos;s favourites here.</p></div>)}</div></section></main>}
